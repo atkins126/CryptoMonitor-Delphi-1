@@ -1,0 +1,30 @@
+object frmCarregar: TfrmCarregar
+  Left = 0
+  Top = 0
+  Caption = 'Carregando...'
+  ClientHeight = 72
+  ClientWidth = 302
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Top = 0
+    Width = 302
+    Height = 72
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitWidth = 289
+    ExplicitHeight = 57
+  end
+end
