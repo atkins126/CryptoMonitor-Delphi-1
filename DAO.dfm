@@ -57,51 +57,6 @@ object frmDAO: TfrmDAO
     Left = 40
     Top = 149
   end
-  object ClientLocalidade: TRESTClient
-    Accept = 'https://api-d.bancornx.com.br/localizacao/v1/api'
-    AcceptCharset = 'utf-8, *;q=0.8'
-    BaseURL = 'https://api-d.bancornx.com.br/localizacao/v1/api'
-    Params = <>
-    Left = 424
-    Top = 72
-  end
-  object RequestLocalidade: TRESTRequest
-    AssignedValues = [rvAccept, rvConnectTimeout, rvReadTimeout]
-    Accept = 'https://api.bancornx.com.br/localizacao/v1/api'
-    Client = ClientLocalidade
-    Params = <
-      item
-        Kind = pkURLSEGMENT
-        Name = 'estado'
-        Options = [poAutoCreated]
-        Value = '24'
-      end>
-    Resource = 'localidade/options/{estado}'
-    ResourceSuffix = '?api_key=546244892b97cfbac81e1b9978e216c6'
-    Response = ResponseLocalidade
-    Left = 424
-    Top = 128
-  end
-  object ResponseLocalidade: TRESTResponse
-    ContentType = 'application/json'
-    Left = 424
-    Top = 184
-  end
-  object RequestEstado: TRESTRequest
-    AssignedValues = [rvConnectTimeout, rvReadTimeout]
-    Client = ClientLocalidade
-    Params = <>
-    Resource = 'estados'
-    ResourceSuffix = '?api_key=546244892b97cfbac81e1b9978e216c6'
-    Response = ResponseEstado
-    Left = 528
-    Top = 128
-  end
-  object ResponseEstado: TRESTResponse
-    ContentType = 'application/json'
-    Left = 528
-    Top = 184
-  end
   object RequestGrafico: TRESTRequest
     AssignedValues = [rvConnectTimeout, rvReadTimeout]
     Client = ClientBitcoin

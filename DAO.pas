@@ -15,11 +15,6 @@ type
     ClientBitcoin: TRESTClient;
     RequestBitcoin: TRESTRequest;
     ResponseBitcoin: TRESTResponse;
-    ClientLocalidade: TRESTClient;
-    RequestLocalidade: TRESTRequest;
-    ResponseLocalidade: TRESTResponse;
-    RequestEstado: TRESTRequest;
-    ResponseEstado: TRESTResponse;
     RequestGrafico: TRESTRequest;
     ResponseGrafico: TRESTResponse;
     RequestUSD: TRESTRequest;
